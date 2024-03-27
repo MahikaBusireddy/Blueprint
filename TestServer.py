@@ -54,8 +54,8 @@ while True:
     client, addr = ss.accept()
     t2 = threading.Thread(target=start_connection, args=(client,))
     t2.start()
-    
-	ss.close()
+	
+    ss.close()
     exit()
 
 # Close the server socket
